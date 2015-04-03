@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace UiTest.Models
+﻿namespace UiTest.Models
 {
 	public class Message
 	{

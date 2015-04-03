@@ -63,9 +63,19 @@ namespace UiTest.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Send_Button {
+        internal static System.Drawing.Bitmap SendButton_Focused {
             get {
-                object obj = ResourceManager.GetObject("Send_Button", resourceCulture);
+                object obj = ResourceManager.GetObject("SendButton_Focused", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SendButton_Unfocused {
+            get {
+                object obj = ResourceManager.GetObject("SendButton_Unfocused", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

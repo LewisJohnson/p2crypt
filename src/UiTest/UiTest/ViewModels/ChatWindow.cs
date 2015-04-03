@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -8,8 +11,11 @@ using UiTest.Properties;
 
 namespace UiTest.ViewModels
 {
-	//todo: Implement drag and drop of text files.
-	public sealed class MainWindowViewModel : INotifyPropertyChanged
+
+    //TODO: Implement button design change. If textbox focused, Make button visible, or change button style.
+
+
+    public sealed class ChatWindow : INotifyPropertyChanged
 	{
 		#region Fields
 
@@ -17,11 +23,13 @@ namespace UiTest.ViewModels
 		private string _newMessage;
 		private ICommand _sendCommand;
 
+
+
 		#endregion Fields
 
 		#region Constructors
 
-		public MainWindowViewModel()
+		public ChatWindow()
 		{
 			Messages = new ObservableCollection<Message>
 			{
@@ -44,6 +52,7 @@ namespace UiTest.ViewModels
 
 		#region Properties
 
+
 		public ObservableCollection<Message> Messages
 		{
 			get { return _messages; }
@@ -55,7 +64,7 @@ namespace UiTest.ViewModels
 			}
 		}
 
-		public string NewMessage
+	    public string NewMessage
 		{
 			get { return _newMessage; }
 			set
@@ -78,15 +87,30 @@ namespace UiTest.ViewModels
 			}
 		}
 
-		#endregion Properties
+	    public object UserName
+	    {
+	        get
+	        {
+                //TODO: Implement real contact
+	             return new Contact("Contact").ToString();
+	        }
+	    }
+
+
+	    #endregion Properties
 
 		#region Methods
 
 		[NotifyPropertyChangedInvocator]
 		private void OnPropertyChanged([CallerMemberName] string propertyName = null)
 		{
-			PropertyChangedEventHandler handler = PropertyChanged;
-			if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
+			var handler = this.PropertyChanged;
+		    if (handler != null)
+		    {
+		        handler(this, new PropertyChangedEventArgs(propertyName));
+
+
+		    }
 		}
 
 		private void SendMessage(string message)

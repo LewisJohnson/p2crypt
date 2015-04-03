@@ -1,29 +1,30 @@
-﻿using System.Windows;
-
-namespace UiTest.Views
+﻿namespace UiTest.Views
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	public partial class MainWindow
-	{
-		#region Constructors
+    using System.Windows;
 
-		public MainWindow()
+    public partial class MainWindow
+    {
+        public MainWindow()
 		{
 			this.InitializeComponent();
 			this.Loaded += this.OnLoaded;
 		}
 
-		#endregion Constructors
-
-		#region Methods
-
 		private void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
 		{
-			this.NewMessage.Focus();
+            //Might need
 		}
 
-		#endregion Methods
-	}
+
+        /* Sorry for breaking MVVM. 
+         * But I need netowrk stuff to implement properly
+         */
+        private void Contact_OnClick(object sender, RoutedEventArgs e)
+        {
+            var chatwin = new ChatWindow();
+
+            chatwin.InitializeComponent();
+            chatwin.Show();
+        }
+    }
 }
