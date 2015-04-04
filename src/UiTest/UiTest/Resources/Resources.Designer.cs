@@ -61,6 +61,25 @@ namespace UiTest.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hey, turns out your new here, let&apos;s get this set up for you !.
+        /// </summary>
+        internal static string FIRST_LAUNCH_WELCOME {
+            get {
+                return ResourceManager.GetString("FIRST_LAUNCH_WELCOME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo {
+            get {
+                object obj = ResourceManager.GetObject("Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap SendButton_Focused {
@@ -77,6 +96,15 @@ namespace UiTest.Resources {
             get {
                 object obj = ResourceManager.GetObject("SendButton_Unfocused", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome !.
+        /// </summary>
+        internal static string WELCOME {
+            get {
+                return ResourceManager.GetString("WELCOME", resourceCulture);
             }
         }
     }

@@ -4,7 +4,7 @@
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:viewModels="clr-namespace:UiTest.ViewModels"
         Title="P2Crypt" Height="500" Width="500" BorderThickness="1" 
-		MinWidth="300" MinHeight="300" FontFamily="Segoe WP" FontSize="14" >
+		MinWidth="300" MinHeight="300" FontFamily="Segoe WP" FontSize="14" Closing="MetroWindow_Closing" >
     <Window.DataContext>
         <viewModels:MainWindow />
     </Window.DataContext>

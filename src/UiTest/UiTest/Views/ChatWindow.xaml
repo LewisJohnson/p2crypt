@@ -6,7 +6,7 @@
         Title="{Binding UserName}" Height="500" Width="500" BorderThickness="1" 
 		MinWidth="300" MinHeight="300" FontFamily="Segoe WP" FontSize="14" ShowInTaskbar="False">
     <Window.DataContext>
-        <viewModels:ChatWindow />
+        <viewModels:ChatWindow/>
     </Window.DataContext>
     <Grid Margin="5">
         <Grid.RowDefinitions>

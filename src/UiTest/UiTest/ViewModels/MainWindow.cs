@@ -3,10 +3,19 @@ using UiTest.Models;
 
 namespace UiTest.ViewModels
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class MainWindow
     {
+        /// <summary>
+        /// The contacts collection
+        /// </summary>
         private ObservableCollection<Contact> contactsCollection;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainWindow"/> class.
+        /// </summary>
         public MainWindow()
         {
             this.ContactsCollection = new ObservableCollection<Contact>
@@ -26,6 +35,12 @@ namespace UiTest.ViewModels
 
         }
 
+        /// <summary>
+        /// Gets or sets the contacts collection.
+        /// </summary>
+        /// <value>
+        /// The contacts collection.
+        /// </value>
         public ObservableCollection<Contact> ContactsCollection
         {
             get { return this.contactsCollection; }
