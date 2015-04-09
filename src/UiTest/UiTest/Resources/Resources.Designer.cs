@@ -61,7 +61,7 @@ namespace UiTest.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hey, turns out your new here, let&apos;s get this set up for you !.
+        ///   Looks up a localized string similar to Hey, turns out your new here. Let&apos;s get things set up..
         /// </summary>
         internal static string FIRST_LAUNCH_WELCOME {
             get {
@@ -100,7 +100,7 @@ namespace UiTest.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Welcome !.
+        ///   Looks up a localized string similar to Welcome!.
         /// </summary>
         internal static string WELCOME {
             get {

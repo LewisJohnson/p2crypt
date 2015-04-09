@@ -4,7 +4,7 @@
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:viewModels="clr-namespace:UiTest.ViewModels"
         Title="P2Crypt" Height="500" Width="500" BorderThickness="1" 
-		MinWidth="300" MinHeight="300" FontFamily="Segoe WP" FontSize="14" Closing="MetroWindow_Closing" >
+		MinWidth="300" MinHeight="300" FontFamily="Segoe WP" FontSize="14" Closing="MetroWindow_Closing" UseLayoutRounding="True" >
     <Window.DataContext>
         <viewModels:MainWindow />
     </Window.DataContext>
@@ -24,7 +24,7 @@
                     <DataTemplate>
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Button Content="{Binding UserName}" Click="Contact_OnClick" Margin="5,0,5,5" Width="200" />
+                                <Button Content="{Binding UserName}" Click="Contact_OnClick" Margin="5,0,5,5" Width="150" />
                             </StackPanel>
                         </StackPanel>
                     </DataTemplate>
