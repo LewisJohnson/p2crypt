@@ -1,13 +1,14 @@
-﻿<controls:MetroWindow x:Class="UiTest.Views.ChatWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
-        xmlns:viewModels="clr-namespace:UiTest.ViewModels"
-        Title="{Binding UserName}" Height="500" Width="500" BorderThickness="1" 
-		MinWidth="300" MinHeight="300" FontFamily="Segoe WP" FontSize="14" ShowInTaskbar="False">
-    <Window.DataContext>
+﻿<Page x:Class="UiTest.Views.ChatPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:viewModels="clr-namespace:UiTest.ViewModels"
+      mc:Ignorable="d"  MinWidth="300" MinHeight="300">
+
+    <Page.DataContext>
         <viewModels:ChatWindow/>
-    </Window.DataContext>
+    </Page.DataContext>
     <Grid Margin="5">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -52,4 +53,4 @@
             </Button>
         </Grid>
     </Grid>
-</controls:MetroWindow>
+</Page>

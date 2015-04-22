@@ -75,12 +75,15 @@
     </Compile>
     <Compile Include="Resources\Settings\Settings.cs" />
     <Compile Include="ViewModels\MainWindow.cs" />
+    <Compile Include="Views\ChatPage.xaml.cs">
+      <DependentUpon>ChatPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="Views\ChatWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Views\ChatPage.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -90,10 +93,6 @@
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="ViewModels\ChatWindow.cs" />
-    <Compile Include="Views\ChatWindow.xaml.cs">
-      <DependentUpon>ChatWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Page Include="Resources\Includes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

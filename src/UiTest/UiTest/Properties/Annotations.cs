@@ -66,7 +66,7 @@ namespace UiTest.Properties
     /// </param>
     public StringFormatMethodAttribute(string formatParameterName)
     {
-        this.FormatParameterName = formatParameterName;
+        FormatParameterName = formatParameterName;
     }
 
     public string FormatParameterName { get; private set; }
@@ -128,7 +128,7 @@ namespace UiTest.Properties
     public NotifyPropertyChangedInvocatorAttribute() { }
     public NotifyPropertyChangedInvocatorAttribute(string parameterName)
     {
-        this.ParameterName = parameterName;
+        ParameterName = parameterName;
     }
 
     public string ParameterName { get; private set; }
@@ -184,8 +184,8 @@ namespace UiTest.Properties
 
     public ContractAnnotationAttribute([NotNull] string contract, bool forceFullStates)
     {
-        this.Contract = contract;
-        this.ForceFullStates = forceFullStates;
+        Contract = contract;
+        ForceFullStates = forceFullStates;
     }
 
     public string Contract { get; private set; }
@@ -207,7 +207,7 @@ namespace UiTest.Properties
     public LocalizationRequiredAttribute() : this(true) { }
     public LocalizationRequiredAttribute(bool required)
     {
-        this.Required = required;
+        Required = required;
     }
 
     public bool Required { get; private set; }
@@ -253,7 +253,7 @@ namespace UiTest.Properties
   {
     public BaseTypeRequiredAttribute([NotNull] Type baseType)
     {
-        this.BaseType = baseType;
+        BaseType = baseType;
     }
 
     [NotNull] public Type BaseType { get; private set; }
@@ -279,8 +279,8 @@ namespace UiTest.Properties
     public UsedImplicitlyAttribute(
       ImplicitUseKindFlags useKindFlags, ImplicitUseTargetFlags targetFlags)
     {
-        this.UseKindFlags = useKindFlags;
-        this.TargetFlags = targetFlags;
+        UseKindFlags = useKindFlags;
+        TargetFlags = targetFlags;
     }
 
     public ImplicitUseKindFlags UseKindFlags { get; private set; }
@@ -307,8 +307,8 @@ namespace UiTest.Properties
     public MeansImplicitUseAttribute(
       ImplicitUseKindFlags useKindFlags, ImplicitUseTargetFlags targetFlags)
     {
-        this.UseKindFlags = useKindFlags;
-        this.TargetFlags = targetFlags;
+        UseKindFlags = useKindFlags;
+        TargetFlags = targetFlags;
     }
 
     [UsedImplicitly] public ImplicitUseKindFlags UseKindFlags { get; private set; }
@@ -358,7 +358,7 @@ namespace UiTest.Properties
     public PublicAPIAttribute() { }
     public PublicAPIAttribute([NotNull] string comment)
     {
-        this.Comment = comment;
+        Comment = comment;
     }
 
     [NotNull] public string Comment { get; private set; }
@@ -399,7 +399,7 @@ namespace UiTest.Properties
     public PathReferenceAttribute() { }
     public PathReferenceAttribute([PathReference] string basePath)
     {
-        this.BasePath = basePath;
+        BasePath = basePath;
     }
 
     [NotNull] public string BasePath { get; private set; }
@@ -455,7 +455,7 @@ namespace UiTest.Properties
     public AspMvcActionAttribute() { }
     public AspMvcActionAttribute([NotNull] string anonymousProperty)
     {
-        this.AnonymousProperty = anonymousProperty;
+        AnonymousProperty = anonymousProperty;
     }
 
     [NotNull] public string AnonymousProperty { get; private set; }
@@ -472,7 +472,7 @@ namespace UiTest.Properties
     public AspMvcAreaAttribute() { }
     public AspMvcAreaAttribute([NotNull] string anonymousProperty)
     {
-        this.AnonymousProperty = anonymousProperty;
+        AnonymousProperty = anonymousProperty;
     }
 
     [NotNull] public string AnonymousProperty { get; private set; }
@@ -491,7 +491,7 @@ namespace UiTest.Properties
     public AspMvcControllerAttribute() { }
     public AspMvcControllerAttribute([NotNull] string anonymousProperty)
     {
-        this.AnonymousProperty = anonymousProperty;
+        AnonymousProperty = anonymousProperty;
     }
 
     [NotNull] public string AnonymousProperty { get; private set; }
@@ -585,7 +585,7 @@ namespace UiTest.Properties
     public HtmlElementAttributesAttribute() { }
     public HtmlElementAttributesAttribute([NotNull] string name)
     {
-        this.Name = name;
+        Name = name;
     }
 
     [NotNull] public string Name { get; private set; }
@@ -598,7 +598,7 @@ namespace UiTest.Properties
   {
     public HtmlAttributeValueAttribute([NotNull] string name)
     {
-        this.Name = name;
+        Name = name;
     }
 
     [NotNull] public string Name { get; private set; }

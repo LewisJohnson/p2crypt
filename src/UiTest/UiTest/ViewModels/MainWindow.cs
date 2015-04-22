@@ -3,53 +3,46 @@ using UiTest.Models;
 
 namespace UiTest.ViewModels
 {
-    /// <summary>
-    /// 
-    /// </summary>
     public class MainWindow
     {
-        /// <summary>
-        /// The contacts collection
-        /// </summary>
-        private ObservableCollection<Contact> contactsCollection;
+        private ObservableCollection<Contact> _contactsCollection;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MainWindow"/> class.
-        /// </summary>
         public MainWindow()
         {
-            this.ContactsCollection = new ObservableCollection<Contact>
+            ContactsCollection = new ObservableCollection<Contact>
             {
-                new Contact("Test Contact 1"),
-                new Contact("Test Contact 2"),
-                new Contact("Test Contact 3"),
-                new Contact("Test Contact 4"),
-                new Contact("Test Contact 5"),
-                new Contact("Test Contact 6"),
-                new Contact("Test Contact 7"),
-                new Contact("Test Contact 8"),
-                new Contact("Test Contact 9"),
-                new Contact("Test Contact 10")
-
+                new Contact("Slackbot"),
+                new Contact("Lewisj489"),
+                new Contact("Scoggs"),
+                new Contact("Flo"),
+                new Contact("Dartman5000"),
+                new Contact("Chargino"),
+                new Contact("Kyles"),
+                new Contact("Gixen"),
+                new Contact("Marcstan"),
+                new Contact("Muffinman007"),
+                new Contact("R01ne"),
+                new Contact("Tarik149"),
+                new Contact("Websly"),
+                new Contact("Test contact"),
+                new Contact("Gabe Newell"),
+                new Contact("Dr.Plonickidonk"),
+                new Contact("Nathan Rohnson"),
+                new Contact("Spongebob SquarePants"),
+                new Contact("Patrick Starfish"),
+                new Contact("Taylor Swift"),
+                new Contact("Psy - Gangnam Style")
             };
-
         }
 
-        /// <summary>
-        /// Gets or sets the contacts collection.
-        /// </summary>
-        /// <value>
-        /// The contacts collection.
-        /// </value>
         public ObservableCollection<Contact> ContactsCollection
         {
-            get { return this.contactsCollection; }
+            get { return _contactsCollection; }
             set
             {
-                if (Equals(value, this.contactsCollection)) return;
-                this.contactsCollection = value;
+                if (Equals(value, _contactsCollection)) return;
+                _contactsCollection = value;
             }
         }
-
     }
 }
